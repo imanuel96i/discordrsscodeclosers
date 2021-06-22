@@ -19,3 +19,10 @@ Also you need to create a .env file with this tokens
  TOKENCHKR= here will be your channel id where you want to be announced
  RSS2= working....
  ```
+
+ If you want to execute the bot with a bat file you need to create one with this
+ ```
+@echo off
+cmd /k "cd /d (here will be your virtual environment route without parenthesis)  & activate & cd /d (here will be your bot route without parenthesis) & py bot.py"
+pause
+ ```

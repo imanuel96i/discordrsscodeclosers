@@ -6,7 +6,7 @@ from discord.ext import tasks
 
 check = 'closers kr'
 
-@tasks.loop(seconds=10)
+@tasks.loop(hours=1)
 async def feedRSSKR(token,rss,client):
     NewsFeed = feedparser.parse(f'{rss}')
     for feed in NewsFeed.entries:
