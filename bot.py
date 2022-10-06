@@ -25,5 +25,3 @@ async def on_message(message):
         print(f'{message.author.name}: {message.content}')
 
 client.run(TOKEN)
-
-prueba = False
